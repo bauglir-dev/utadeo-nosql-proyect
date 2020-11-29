@@ -1,14 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 import pandas as pd
 
 # Cambiar para que acepte ruta relativa
-dirpath = 'E:\\utadeo\\utadeo-nosql-proyect\\data\\'
+dirpath = '\\Users\Lizeth_Blanco\Documents\Maestría\BasesdeDatos\Proyecto\data'
 
 dforigin = pd.read_csv(dirpath + 'train.csv')
 
@@ -25,5 +19,5 @@ dfcustomer.to_csv(dirpath + 'customers.csv')
 dfvehicle.columns = ['_key', 'Vehicle_Age', 'Vehicle_Damage']
 dfvehicle.to_csv(dirpath + 'vehicles.csv')
 
-dfcustomer.to_csv(dirpath + 'insure.csv')
+dfinsure.to_csv(dirpath + 'insure.csv')
 
