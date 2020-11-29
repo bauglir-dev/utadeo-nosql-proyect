@@ -1,0 +1,11 @@
+
+user: usrinsurance
+password: Utadeo12345
+database: insurancedb
+
+
+arangoimport.exe --file E:\utadeo\utadeo-nosql-proyect\data\customers.csv --collection customers --create-collection true --type csv --server.database "insurancedb" --server.username "usrinsurance" --server.password "Utadeo12345"
+
+arangoimport.exe --file E:\utadeo\utadeo-nosql-proyect\data\vehicles.csv --collection vehicles --create-collection true --type csv --server.database "insurancedb" --server.username "usrinsurance" --server.password "Utadeo12345"
+
+arangoimport.exe --file E:\utadeo\utadeo-nosql-proyect\data\insure.csv --collection insures --create-collection true --type csv --create-collection-type edge --server.database "insurancedb" --server.username "usrinsurance" --server.password "Utadeo12345"
